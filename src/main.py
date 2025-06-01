@@ -81,7 +81,7 @@ def generate_page_recursively(dir_path_content, template_path, dest_dir_path, ba
     return 
 
 def main():
-    BASE_PATH = f"{sys.argv[1]}/" if len(sys.argv) > 1 else "/"
+    BASE_PATH = f"/{sys.argv[1]}/" if len(sys.argv) > 1 else "/"
     print(BASE_PATH)
     static_to_public()
     # generate_page("content/index.md","template.html","public/index.html")
